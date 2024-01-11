@@ -1,4 +1,4 @@
-import "./table.css";
+import "../assets/table.css";
 export default function Table({points}) {
     console.log(points)
     return(

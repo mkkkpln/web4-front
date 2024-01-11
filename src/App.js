@@ -1,9 +1,9 @@
 import './App.css';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import { Provider } from 'react-redux'
-import Auth from "./Auth";
-import RegistrationModal from "./Auth";
-import Main from "./Main";
+import Auth from "./auth/Auth";
+import RegistrationModal from "./auth/Auth";
+import Main from "./main/Main";
 import store from "./store";
 
 function App() {

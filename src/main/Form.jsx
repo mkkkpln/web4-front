@@ -1,8 +1,8 @@
 import {useEffect, useState} from "react";
 import axios from "axios";
-import {add, set} from "./pointsSlice";
+import {add, set} from "../pointsSlice";
 import {useDispatch, useSelector} from "react-redux";
-import "./form.css";
+import "../assets/form.css";
 
 export default function Form({setR1}) {
     const [x, setX] = useState(0);
@@ -16,7 +16,7 @@ export default function Form({setR1}) {
     return (
         <div className="fields">
             <div className="container">
-                <form className="fields-form" id="fields-form" action="#" onSubmit={event => {
+                <form className="fields-form" id="fields-form" action="src/main/Form#" onSubmit={event => {
                     event.preventDefault();
                     console.log(x,y,r);
                     axios('http://localhost:8080' + '/add', {

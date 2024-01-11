@@ -1,6 +1,6 @@
 import {useEffect, useRef} from "react";
 import axios from "axios";
-import {add, set} from "./pointsSlice";
+import {add, set} from "../pointsSlice";
 import {useDispatch} from "react-redux";
 
 export default function Graph({points, r}) {

@@ -2,9 +2,9 @@ import Graph from "./Graph";
 import Form from "./Form";
 import Table from "./Table";
 import classes from "./Main.module.css"
-import "./style.css";
+import "../assets/style.css";
 import {useDispatch, useSelector} from "react-redux";
-import { set } from './pointsSlice'
+import { set } from '../pointsSlice'
 import axios from "axios";
 import {useEffect, useState} from "react";
 import {useCookies} from 'react-cookie'

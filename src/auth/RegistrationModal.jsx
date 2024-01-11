@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import './registration.css';
+import '../assets/registration.css';
 
 const RegistrationModal = (props) => {
     const [userData, setUserData] = useState({

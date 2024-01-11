@@ -1,5 +1,5 @@
 import axios from 'axios'
-import './button.css';
+import '../assets/button.css';
 import {useEffect, useState} from "react";
 import {useCookies} from 'react-cookie'
 import {useNavigate} from "react-router-dom";
