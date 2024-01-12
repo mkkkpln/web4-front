@@ -71,7 +71,7 @@ export default function Auth() {
                         data: JSON.stringify({'username' : login, 'password' : password})
                     }).then(res => {
                         if (res.status === 200) {
-                            if (res.data.exists) {
+                            if (res.data) {
                                 setCookie("Token", res.data);
                                 navigate("/main");
                             } else {
@@ -81,6 +81,7 @@ export default function Auth() {
                             console.log("Ошибка при выполнении запроса");
                         }
                     }).catch(err => {
+                        alert("Такой пользователь не существует");
                         console.log(err);
                     })
                 } else {
